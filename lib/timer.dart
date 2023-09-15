@@ -4,19 +4,17 @@ import 'package:timer_count_down/timer_count_down.dart';
 
 void main() => runApp(MyApp());
 
-///
-/// Test app
-///
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Countdown Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.yellow,
       ),
       home: MyHomePage(
-        title: 'Flutter Demo Countdown',
+        title: 'TIMER',
       ),
     );
   }

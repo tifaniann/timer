@@ -9,31 +9,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Countdown Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.yellow,
-      ),
-      home: MyHomePage(
-        title: 'TIMER',
-      ),
+      home: MyHomePage(),
     );
   }
 }
+
+
 
 ///
 /// Home page
 ///
 class MyHomePage extends StatefulWidget {
-  ///
-  /// AppBar title
-  ///
-  final String title;
-
-  /// Home page
-  MyHomePage({
-    Key? key,
-    required this.title,
-  }) : super(key: key);
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -51,9 +37,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          widget.title,
-        ),
+        backgroundColor: Colors.cyan,
+        title: Text('Timer'),
+        actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: Icon(Icons.timer),
+          ),
+        ],
       ),
       body: Center(
         child: Column(

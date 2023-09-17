@@ -36,7 +36,11 @@ class _HomeState extends State<Home> {
           ],
         ),
         body: Container(
-            padding: EdgeInsets.all(10),
+            padding: EdgeInsets.all(1),
+            child: Container(
+              color: Colors.brown[50],
+              width:600,
+              height:150,
             child:
             Stack(
                 children: [
@@ -66,8 +70,9 @@ class _HomeState extends State<Home> {
                   ),
 
                 ]
-            )
-        )
+            ),
+            ),
+        ),
 
     );
   }
